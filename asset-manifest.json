@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/cash-counts-website/static/css/main.073c9b0a.css",
-    "main.js": "/cash-counts-website/static/js/main.af0ee416.js",
+    "main.css": "/cash-counts-website/static/css/main.e6c13ad2.css",
+    "main.js": "/cash-counts-website/static/js/main.86d2042b.js",
     "static/js/787.b55241d2.chunk.js": "/cash-counts-website/static/js/787.b55241d2.chunk.js",
-    "static/media/logo.svg": "/cash-counts-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cash-counts-website/index.html",
-    "main.073c9b0a.css.map": "/cash-counts-website/static/css/main.073c9b0a.css.map",
-    "main.af0ee416.js.map": "/cash-counts-website/static/js/main.af0ee416.js.map",
+    "main.e6c13ad2.css.map": "/cash-counts-website/static/css/main.e6c13ad2.css.map",
+    "main.86d2042b.js.map": "/cash-counts-website/static/js/main.86d2042b.js.map",
     "787.b55241d2.chunk.js.map": "/cash-counts-website/static/js/787.b55241d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.af0ee416.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.86d2042b.js"
   ]
 }
