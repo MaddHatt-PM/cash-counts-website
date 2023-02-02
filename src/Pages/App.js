@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom"
-import PrivacyPolicy from "../Components/PrivacyPolicy/PrivacyPolicy";
 import HomePage from "./HomePage/HomePage";
+import PrivacyPolicyPage from "./PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
-          <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route exact path='/privacy-policy' element={<PrivacyPolicyPage />} />
         </Routes>
       </HashRouter>
     </>
