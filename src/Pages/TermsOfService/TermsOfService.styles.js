@@ -27,6 +27,8 @@ export const Detail = styled.p`
 
 export const Divider = styled.hr`
   border-top: 0px solid black;
+  margin-top: 1em;
+  margin-bottom: 2em;
 `;
 
 export const H2 = styled.h2`
@@ -63,7 +65,7 @@ export const H5 = styled.h5`
 
 export const P = styled.p`
   margin: 0;
-  margin-top: ${props => props.index === 0 ? 0 : 1}em;
+  margin-top: ${props => props.index === 0 ? 0 : 2}em;
 `;
 
 export const Box = styled.div`

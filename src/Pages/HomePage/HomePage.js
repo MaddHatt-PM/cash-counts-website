@@ -1,8 +1,10 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button/Button";
+import { Container, VCentered, Group, StickyFooter, Screenshot, HCentered } from "./HomePage.styles";
+
 import ParallaxBackground from "../ParallaxBackground/ParallaxBackground";
-import { Container, Group, StickyFooter } from "./HomePage.styles";
+import ScreenshotImage from "../../Assets/Screenshot01_Dark_iPhone13ProMax.png"
 
 function HomePage() {
   const navigate = useNavigate();
@@ -11,19 +13,31 @@ function HomePage() {
 
   return (
     <Container>
+      <VCentered style={{ zIndex: 1 }} >
+        <ParallaxBackground />
+      </VCentered>
 
-      <ParallaxBackground />
+      <VCentered style={{ zIndex: 2 }}>
+        <HCentered>
+          <Group></Group>
 
-      <StickyFooter>
-        <Group>
-        </Group>
+          <Group>
+            <Screenshot src={ScreenshotImage} />
+          </Group>
+        </HCentered>
+      </VCentered>
 
+      <StickyFooter style={{ zIndex: 10 }}>
         <Group>
           <Button text={"Privacy Policy"} callback={toPrivacyPolicy} />
           <Button text={"Terms of Service"} callback={toTermsOfService} />
         </Group>
 
-        <Group></Group>
+        <Group>
+        </Group>
+
+        <Group>
+        </Group>
       </StickyFooter>
     </Container>
   );

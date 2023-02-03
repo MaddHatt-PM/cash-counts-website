@@ -1,10 +1,10 @@
 import React from "react";
 import { Wrapper } from "./Button.styles";
 
-const Button = ({ text, callback }) => {
+const Button = ({ text, color = "", callback }) => {
 
   return (
-    <Wrapper type="button" onClick={callback}>
+    <Wrapper buttonColor={color} type="button" onClick={callback}>
       {text}
     </Wrapper>
   );

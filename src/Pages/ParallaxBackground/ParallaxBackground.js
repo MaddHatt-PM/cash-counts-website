@@ -3,7 +3,8 @@ import { Container, Image } from "./ParallaxBackground.styles";
 
 import backgroundImage from "../../Assets/Background.jpg"
 
-function ParallaxBackground({ factor = 30, imageAspectRatio = 1 }) {
+function ParallaxBackground({ factor = 50, imageAspectRatio = 1 }) {
+  const height = 500;
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -16,22 +17,23 @@ function ParallaxBackground({ factor = 30, imageAspectRatio = 1 }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (window.DeviceOrientationEvent) {
-      const handleOrientation = (event) => {
-        setPosition({ x: event.beta, y: event.gamma });
-      };
-      window.addEventListener('deviceorientation', handleOrientation);
-      return () => {
-        window.removeEventListener('deviceorientation', handleOrientation);
-      };
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.DeviceOrientationEvent) {
+  //     const handleOrientation = (event) => {
+  //       setPosition({ x: event.beta, y: event.gamma });
+  //     };
+  //     window.addEventListener('deviceorientation', handleOrientation);
+  //     return () => {
+  //       window.removeEventListener('deviceorientation', handleOrientation);
+  //     };
+  //   }
+  // }, []);
 
   return (
-    <Container imageAspectRatio={imageAspectRatio}>
+    <Container height={height} imageAspectRatio={imageAspectRatio}>
       <Image
         src="https://via.placeholder.com/2000x2000"
+        extent="10"
         style={{
           transform: `translate(${position.x * (1 / factor)}px, ${position.y * (1 / factor)}px)`,
         }}

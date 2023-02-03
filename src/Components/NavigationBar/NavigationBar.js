@@ -1,22 +1,28 @@
 import React from "react";
-import { Container, Group } from "./NavigationBar.styles";
+import { Container, Content, Group, Spacer, Title } from "./NavigationBar.styles";
 
-function NavigationBar() {
+function NavigationBar({ height = "4em" }) {
 
   return (
     <>
-      <Container>
-        <Group>
-          Left Group
-        </Group>
+      <Spacer height={height} />
 
-        <Group>
-          {/* Middle Group */}
-        </Group>
+      <Container height={height}>
+        <Content>
+          <Group>
+            <Title>
+              Cash Counts
+            </Title>
+          </Group>
 
-        <Group>
-          Right Group
-        </Group>
+          <Group>
+            {/* Middle Group */}
+          </Group>
+
+          <Group>
+            {/* Right Group */}
+          </Group>
+        </Content>
       </Container>
     </>
   );
