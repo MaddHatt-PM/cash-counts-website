@@ -4,6 +4,7 @@ export const Wrapper = styled.button`
   cursor: pointer;
   
   padding: 10px 32px;
+  margin: 8px 4px;
   border-radius: 6px;
   border: ${props => props.theme.borderWidth} solid ${props => props.theme.outlineColor};
   background: ${props => props.theme.fillColor};

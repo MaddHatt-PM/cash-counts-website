@@ -5,6 +5,18 @@ export const Container = styled.div`
 `;
 
 export const SafeArea = styled.div`
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  margin: 10px;
 `;
 
+export const StickyFooter = styled.div`
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+`
+export const Group = styled.div`
+  
+`

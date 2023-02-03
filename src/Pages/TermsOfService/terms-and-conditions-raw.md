@@ -8,7 +8,7 @@ The Cash Counts app stores and processes personal data that you have provided to
 
 The app does use third-party services that declare their Terms and Conditions.
 
-Link to Terms and Conditions of third-party service providers used by the app
+Link to Terms and Conditions of third-party service providers used by the app:
 
 *   [AdMob](https://developers.google.com/admob/terms)
 
