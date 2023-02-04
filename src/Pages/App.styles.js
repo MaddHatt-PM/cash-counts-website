@@ -7,7 +7,7 @@ export const Background = styled.div`
   height: 100%;
   width: 100%;
   z-index: -10;
-  background-color: #d8d8e6;
+  background-color: #17151a;
 `;
 
 export const ScrollView = styled.div`

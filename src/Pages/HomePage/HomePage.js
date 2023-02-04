@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button/Button";
-import { Container, VCentered, Group, StickyFooter, Screenshot, HCentered } from "./HomePage.styles";
+import { Container, VCentered, Group, StickyFooter, Screenshot, HCentered, P, A } from "./HomePage.styles";
+import InfoBox from "../../Components/InfoBox/InfoBox"
 
 import ParallaxBackground from "../ParallaxBackground/ParallaxBackground";
 import ScreenshotImage from "../../Assets/Screenshot01_Dark_iPhone13ProMax.png"
@@ -19,11 +20,12 @@ function HomePage() {
 
       <VCentered style={{ zIndex: 2 }}>
         <HCentered>
-          <Group></Group>
-
+          <div />
           <Group>
+            <InfoBox />
             <Screenshot src={ScreenshotImage} />
           </Group>
+          <div />
         </HCentered>
       </VCentered>
 
@@ -37,6 +39,8 @@ function HomePage() {
         </Group>
 
         <Group>
+          <P>Photo by <A href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</A> on <A href="https://unsplash.com/backgrounds/art/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</A>
+          </P>
         </Group>
       </StickyFooter>
     </Container>

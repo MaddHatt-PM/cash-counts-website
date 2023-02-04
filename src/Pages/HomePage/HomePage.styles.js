@@ -25,7 +25,7 @@ export const HCentered = styled.div`
 `
 
 export const Screenshot = styled.img`
-  /* transform: translate(0, -2vh); */
+  transform: translate(0, -2vh);
   height: 95vh;
 `
 
@@ -37,8 +37,24 @@ export const StickyFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const P = styled.p`
+  color: rgba(155, 142, 163, 0.685);
+`;
+
+export const A = styled.a`
+  color: rgba(155, 142, 163, 0.685);
+  
+  &:hover {
+    color: rgb(99, 97, 216);
+
+  }
 `
+
 export const Group = styled.div`
+  display: flex;
+  align-items: center;
   margin-left: 2em;
   margin-right: 2em;
 `
