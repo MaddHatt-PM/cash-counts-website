@@ -3,8 +3,8 @@ import { Container, Image } from "./ParallaxBackground.styles";
 
 import backgroundImage from "../../Assets/Background.jpg"
 
-function ParallaxBackground({ factor = 60, imageAspectRatio = 1 }) {
-  const height = 550;
+function ParallaxBackground({ factor = 40, imageAspectRatio = 1 }) {
+  const [refRatio, setRefRatio] = useState((650 / 965) * window.innerHeight)
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -16,6 +16,17 @@ function ParallaxBackground({ factor = 60, imageAspectRatio = 1 }) {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
+  useEffect(() => {
+    const handleWindowResize = (event) => {
+      setRefRatio((650 / 965) * window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  })
 
   // useEffect(() => {
   //   if (window.DeviceOrientationEvent) {
@@ -30,7 +41,7 @@ function ParallaxBackground({ factor = 60, imageAspectRatio = 1 }) {
   // }, []);
 
   return (
-    <Container height={height} imageAspectRatio={imageAspectRatio}>
+    <Container style={{ height: `${refRatio}px` }} imageAspectRatio={imageAspectRatio}>
       <Image
         // src="https://via.placeholder.com/2000x2000"
         src={backgroundImage}

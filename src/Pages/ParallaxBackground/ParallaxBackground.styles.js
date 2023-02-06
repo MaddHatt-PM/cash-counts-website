@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  height: ${props => props.height}px;
+  height: ${props => props.height}%;
   width: calc(100vw * ${({ imageAspectRatio }) => imageAspectRatio});
   overflow: hidden;
 `;

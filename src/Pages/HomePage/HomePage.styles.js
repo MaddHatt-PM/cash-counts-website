@@ -15,28 +15,49 @@ export const VCentered = styled.div`
   justify-content: center;
   flex-direction: column;
   overflow: none;
-`
+`;
 
 export const HCentered = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
-`
+`;
 
 export const Screenshot = styled.img`
   transform: translate(0, -2vh);
   height: 95vh;
-`
+`;
 
-export const StickyFooter = styled.div`
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+`;
+
+export const Footer = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
 
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    
+    ${Group} {
+      flex-direction: column-reverse;
+      margin: 0;
+
+      * {
+        margin-bottom: 0.25em;
+      }
+    }
+  }
 `;
 
 export const P = styled.p`
@@ -51,11 +72,4 @@ export const A = styled.a`
     color: rgb(99, 97, 216);
 
   }
-`
-
-export const Group = styled.div`
-  display: flex;
-  align-items: center;
-  margin-left: 2em;
-  margin-right: 2em;
-`
+`;

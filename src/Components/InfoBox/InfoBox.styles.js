@@ -37,12 +37,20 @@ export const QRCodeElement = styled.img`
   width: 100px;
 `;
 
+export const ComingSoon = styled.p`
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f6f2f8;
+  opacity: 50%;
+`;
+
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
   width: 100%;
-  /* margin-bottom: -0.75em; */
 `;
 
 export const AppIcon = styled.img`

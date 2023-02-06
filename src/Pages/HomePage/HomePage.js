@@ -1,11 +1,11 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+
+import { Container, VCentered, Group, Footer, HCentered, P, A } from "./HomePage.styles";
 import Button from "../../Components/Button/Button";
-import { Container, VCentered, Group, StickyFooter, Screenshot, HCentered, P, A } from "./HomePage.styles";
 import InfoBox from "../../Components/InfoBox/InfoBox"
 
 import ParallaxBackground from "../ParallaxBackground/ParallaxBackground";
-import ScreenshotImage from "../../Assets/Screenshot01_Dark_iPhone13ProMax.png"
 import AppPreview from "../../Components/AppPreview/AppPreview";
 
 function HomePage() {
@@ -31,8 +31,9 @@ function HomePage() {
         </HCentered>
       </VCentered>
 
-      <StickyFooter style={{ zIndex: 10 }}>
+      <Footer style={{ zIndex: 10 }}>
         <Group>
+          <P style={{ marginRight: "2em" }}>Copyright © 2023 MaddHatt LLC</P>
           <Button text={"Privacy Policy"} callback={toPrivacyPolicy} />
           <Button text={"Terms of Service"} callback={toTermsOfService} />
         </Group>
@@ -44,7 +45,7 @@ function HomePage() {
           <P>Photo by <A href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pawel Czerwinski</A> on <A href="https://unsplash.com/backgrounds/art/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</A>
           </P>
         </Group>
-      </StickyFooter>
+      </Footer>
     </Container>
   );
 }

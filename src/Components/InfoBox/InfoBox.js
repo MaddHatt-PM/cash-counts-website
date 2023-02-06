@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AppIcon, Container, Divider, GetOnAppStoreBadge, GridContainer, GridEmoji, GridItem, H1, HeaderContainer, MiniTitle, P, QRCodeElement, Viewport } from "./InfoBox.styles";
+import { AppIcon, ComingSoon, Container, Divider, GetOnAppStoreBadge, GridContainer, GridEmoji, GridItem, H1, HeaderContainer, MiniTitle, P, QRCodeElement, Viewport } from "./InfoBox.styles";
 import { getNormalized, lerp } from "../../Utilities/Math";
 
 import appIconImage from "../../Assets/AppIcon.png"
@@ -7,6 +7,7 @@ import appStoreBadge from "../../Assets/DownloadOnAppStoreBadge.svg"
 import qrCodeSVG from "../../Assets/AppStoreQRCode.svg"
 
 const InfoBox = () => {
+  const IS_APP_LIVE = false
   let [minWidth, maxWidth] = [225, 400]
   const [width, setWidth] = useState(maxWidth);
 
@@ -60,11 +61,20 @@ const InfoBox = () => {
           )}
         </GridContainer>
 
-        <QRCodeElement src={qrCodeSVG} />
+        {IS_APP_LIVE &&
+          <QRCodeElement src={qrCodeSVG} />
+        }
 
-        <a href="www.google.com">
-          <GetOnAppStoreBadge src={appStoreBadge} />
-        </a>
+        {IS_APP_LIVE &&
+          <a href="www.google.com">
+            <GetOnAppStoreBadge src={appStoreBadge} />
+          </a>
+        }
+
+        {!IS_APP_LIVE &&
+          <ComingSoon>Coming soon</ComingSoon>
+        }
+
       </Viewport>
     </Container>
   );
