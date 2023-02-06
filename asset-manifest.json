@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.addb7e86.js",
+    "main.js": "/static/js/main.a17f9061.js",
     "static/js/787.b55241d2.chunk.js": "/static/js/787.b55241d2.chunk.js",
     "static/media/Background.jpg": "/static/media/Background.8906ae99cf0b766d4b2b.jpg",
     "static/media/Screenshot01_Dark_iPhone13ProMax.png": "/static/media/Screenshot01_Dark_iPhone13ProMax.9be780f5584d964dcea6.png",
+    "static/media/AppStoreQRCode.svg": "/static/media/AppStoreQRCode.2f22e1fa49c15487b6dec63282afecfe.svg",
+    "static/media/AppIcon.png": "/static/media/AppIcon.29bc47435c6ea6504e0c.png",
+    "static/media/DownloadOnAppStoreBadge.svg": "/static/media/DownloadOnAppStoreBadge.8c4986ee4828b47d16f5cd694ef065f2.svg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.addb7e86.js.map": "/static/js/main.addb7e86.js.map",
+    "main.a17f9061.js.map": "/static/js/main.a17f9061.js.map",
     "787.b55241d2.chunk.js.map": "/static/js/787.b55241d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.addb7e86.js"
+    "static/js/main.a17f9061.js"
   ]
 }
