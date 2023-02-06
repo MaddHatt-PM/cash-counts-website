@@ -3,8 +3,8 @@ import { Container, Image } from "./ParallaxBackground.styles";
 
 import backgroundImage from "../../Assets/Background.jpg"
 
-function ParallaxBackground({ factor = 80, imageAspectRatio = 1 }) {
-  const height = 500;
+function ParallaxBackground({ factor = 60, imageAspectRatio = 1 }) {
+  const height = 550;
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -34,9 +34,9 @@ function ParallaxBackground({ factor = 80, imageAspectRatio = 1 }) {
       <Image
         // src="https://via.placeholder.com/2000x2000"
         src={backgroundImage}
-        extent="5"
+        extent="10"
         style={{
-          transform: `translate(${position.x * (1 / factor)}px, ${0}px)`,
+          transform: `translate(${-1 * (position.x - window.innerWidth) * (1 / factor)}px, 0px)`,
         }}
       />
     </Container>

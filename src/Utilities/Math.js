@@ -14,8 +14,12 @@ export function clamp01(val) {
   return max(0, min(1, val));
 }
 
-export function getPercentage(start, end, val) {
+export function getNormalized(start, end, val) {
   return (val - start) / (end - start);
+}
+
+export function getNormalizedClamp(start, end, val) {
+  return clamp01((val - start) / (end - start));
 }
 
 export function lerp(start, end, t) {

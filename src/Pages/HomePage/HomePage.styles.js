@@ -6,9 +6,9 @@ export const Container = styled.div`
 
 export const VCentered = styled.div`
   position: fixed;
-  top: 2em;
+  top: calc(50% - 275px);
   left: 0;
-  height: 100vh;
+  height: 550px;
   width: 100%;
   display:flex;
   align-items: center;
@@ -41,6 +41,7 @@ export const StickyFooter = styled.div`
 
 export const P = styled.p`
   color: rgba(155, 142, 163, 0.685);
+  font-size: smaller;
 `;
 
 export const A = styled.a`

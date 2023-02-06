@@ -6,6 +6,7 @@ import InfoBox from "../../Components/InfoBox/InfoBox"
 
 import ParallaxBackground from "../ParallaxBackground/ParallaxBackground";
 import ScreenshotImage from "../../Assets/Screenshot01_Dark_iPhone13ProMax.png"
+import AppPreview from "../../Components/AppPreview/AppPreview";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -23,7 +24,8 @@ function HomePage() {
           <div />
           <Group>
             <InfoBox />
-            <Screenshot src={ScreenshotImage} />
+            {/* <Screenshot src={ScreenshotImage} /> */}
+            <AppPreview />
           </Group>
           <div />
         </HCentered>

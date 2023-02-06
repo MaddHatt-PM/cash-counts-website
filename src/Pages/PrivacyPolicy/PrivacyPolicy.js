@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, H1, Detail, H2, H3, H4, H5, P, UL, Box, Divider } from "./PrivacyPolicy.styles";
+import { Container, H1, Detail, H2, H3, P, UL, Divider } from "./PrivacyPolicy.styles";
 
 const PrivacyPolicyPage = () => {
   return (
